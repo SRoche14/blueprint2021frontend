@@ -59,9 +59,15 @@ fetch(url1)
                 if (an[i].style.display == "block") {
                     an[i].style.display = "none";
                     an[i].style.visibility = "hidden";
+                    document.getElementsByTagName("textarea")[i].style.border = "none";
                 } else {
                     an[i].style.display = "block";
                     an[i].style.visibility = "visible";
+                    if (document.getElementsByTagName("textarea")[i].value == answers[i]){
+                        document.getElementsByTagName("textarea")[i].style.border = "5px solid green";
+                    } else {
+                        document.getElementsByTagName("textarea")[i].style.border = "5px solid red";
+                    }
                 }
             }
         }
