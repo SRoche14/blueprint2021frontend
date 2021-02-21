@@ -50,6 +50,15 @@ fetch(url1)
             var place = document.getElementById('section1');
             place.appendChild(div);
         }
+
+        document.getElementById("answerbtn").addEventListener('click', show);
+
+        function show() {
+            an = document.getElementsByClassName("Answer");
+            for (var i=0; i< an.length; i++){
+                an[i].style.display = "block";
+            }
+        }
     }
 
   });
