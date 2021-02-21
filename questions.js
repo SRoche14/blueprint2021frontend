@@ -87,8 +87,8 @@ for (var i = 0; i < questions.length; i++) {
     correctA.innerHTML = answers[i];
     div2.appendChild(correctA);
 
-    div.classList.add("addedinfo");
-    div2.classList.add("addedinfo");
+    div.classList.add("questionbox");
+    div2.classList.add("questionbox");
     div.appendChild(div2);
     
 
