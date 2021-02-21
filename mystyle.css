@@ -76,7 +76,8 @@ body {
   height: 10vh;
 }
 .questionbox2 {
-
+  visibility: collapse;
+  display: none;
 }
 .question {
   font-size: 1.5em;
