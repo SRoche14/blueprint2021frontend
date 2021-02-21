@@ -1,6 +1,7 @@
 {
-  "name": "bear",
+  "name": "Hiqs",
   "version": "1.0",
+  "description": "Highlighted-Instant-Quizes!",
   "manifest_version": 2,
   "content_scripts": [
     {
