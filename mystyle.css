@@ -76,7 +76,7 @@ body {
   height: 10vh;
 }
 .questionbox2 {
-  visibility: collapse;
+  
   display: none;
 }
 .question {
