@@ -101,3 +101,10 @@ body {
     filter: hue-rotate(360deg);
   }
 }
+#output {
+  width: 80%;
+  height: 20vh;
+  margin: 2em;
+  background-color: #fff;
+  color: #000;
+}
