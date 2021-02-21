@@ -56,8 +56,13 @@ fetch(url1)
         function show() {
             an = document.getElementsByClassName("Answer");
             for (var i=0; i< an.length; i++){
-                an[i].style.display = "block";
-                an[i].style.visibility = "visible";
+                if (an[i].style.display == "block") {
+                    an[i].style.display = "none";
+                    an[i].style.visibility = "hidden";
+                } else {
+                    an[i].style.display = "block";
+                    an[i].style.visibility = "visible";
+                }
             }
         }
     }
