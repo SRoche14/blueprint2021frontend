@@ -64,10 +64,19 @@ body {
 }
 .questionbox {
   margin: 2em auto;
-  width: 70%;
+  width: 85%;
   left: 2em;
   border: 2px solid #fff;
   padding: 3em;
+  color: #fff;
+  text-align: center;
+}
+.questionbox textarea {
+  width: 60%;
+  height: 15vh;
+}
+.questionbox2 {
+
 }
 .question {
   font-size: 1.5em;
@@ -80,7 +89,7 @@ body {
   width: 70%;
 }
 #submitbtnholder {
-  margin: 0 auto;
+  margin: 5em auto 10em auto;
   width: 40%;
   display: flex;
   justify-content: center;
@@ -132,7 +141,7 @@ body {
   opacity: 0;
   transition: .5s ease;
 }
-}
+
 #output {
   width: 80%;
   height: 20vh;
@@ -153,6 +162,9 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+#answerbtn:hover {
+  cursor: pointer;
 }
 #answerbtn span {
   position: absolute;
