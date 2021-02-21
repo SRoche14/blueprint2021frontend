@@ -1,5 +1,5 @@
 * {
-
+scroll-behavior: smooth;
 }
 body {
   background-color: #000;
@@ -8,16 +8,34 @@ body {
 }
 #title {
   font-family: 'Source Sans Pro';
-  font-size: 2em;
+  font-size: 4em;
   animation-duration: 2s;
   color: #fff;
 }
+#arrow {
+  color: #fff;
+  z-index: 3;
+  font-size: 5em;
+  position: absolute;
+  left: 50%;
+  bottom: 1em;
+  scroll-behavior: smooth;
+}
+#arrow:hover {
+  cursor: pointer;
+}
 #titlecontainer {
   height: 100vh;
+  margin-top: 0;
   display: flex;
   justify-content: left;
   align-items: center;
-  width: 100%;
+  width: 102%;
+  background: url("https://www.backgroundscool.com/wp-content/uploads/2019/02/space_suit_cosmonauts_astronaut_124302_938x1668-576x1024.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 @keyframes appear {
   0% {
@@ -50,7 +68,7 @@ body {
   font-size: 1.5em;
   color: #b1a296;
 }
-#maincontainer {
+#section1 {
   display: grid;
   grid-template-columns: 100%;
   margin: 0 auto;
@@ -71,7 +89,7 @@ body {
 .logo {
   position: relative;
   font-size: 5em;
-  box-shadow: 0 0 25px #0f0, 0 0 50px #0f0, 0 0 75px #0f0, 0 0 100px #0f0, 0 0 125px #0f0;
+  box-shadow: 0 0 50px #0f0, 0 0 100px #0f0, 0 0 150px #0f0, 0 0 200px #0f0, 0 0 250px #0f0;
   animation: animate 5s linear infinite;
   backdrop-filter: blur(30px);
   border-radius: 50%;
