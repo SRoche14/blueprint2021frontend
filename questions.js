@@ -90,6 +90,8 @@ for (var i = 0; i < questions.length; i++) {
     div.classList.add("addedinfo");
     div2.classList.add("addedinfo");
     div.appendChild(div2);
+    
 
-    document.body.appendChild(div);
+    var place = document.getElementById('section1');
+    place.appendChild(div);
 }}
