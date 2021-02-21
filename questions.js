@@ -57,6 +57,7 @@ fetch(url1)
             an = document.getElementsByClassName("Answer");
             for (var i=0; i< an.length; i++){
                 an[i].style.display = "block";
+                an[i].style.visibility = "visible";
             }
         }
     }
