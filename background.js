@@ -4,6 +4,7 @@ chrome.commands.onCommand.addListener(function (command) {
     code: "window.getSelection().toString();"
 }, function(selection) {
     let data = selection[0];
+    chrome.storage.local.set({"sentence": data});
     console.log(data);
 });
 
