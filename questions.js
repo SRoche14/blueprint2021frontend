@@ -43,7 +43,7 @@ fetch(url1)
         
             div.classList.add("questionbox");
             div2.classList.add("questionbox");
-              div2.classList.add("questionbox2");
+            div2.classList.add("questionbox2");
             div.appendChild(div2);
             
         
@@ -76,6 +76,7 @@ fetch(url1)
                     score = document.createElement("H1");
                     var t = correct+wrong;
                     score.innerHTML = "You got " + correct + "/" + t + " questions correct!";
+                    score.classList.add("finalScore");
                 }
             }
             document.body.appendChild(score);
