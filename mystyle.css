@@ -2,7 +2,11 @@
 scroll-behavior: smooth;
 }
 body {
-  background-color: #000;
+  background: url("https://sm.mashable.com/mashable_in/photo/default/nasa-galaxy_9pu4.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   animation: appear;
   animation-duration: 2s;
 }
@@ -26,7 +30,7 @@ body {
 }
 #titlecontainer {
   height: 100vh;
-  margin-top: 0;
+  margin-top: -.8em;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -53,6 +57,7 @@ body {
   border-radius: 5px;
   width: 100%;
   background-color: #1a1a1d;
+  padding: .2em;
 }
 .answerline:focus {
   color: #fff;
@@ -74,9 +79,25 @@ body {
   margin: 0 auto;
   width: 70%;
 }
+#submitbtnholder {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
 #submit {
   margin-top: 3em;
   border: none;
+  margin-bottom: 3em;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: .5em;
+  outline: none;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #d0d0d0;
 }
 .box {
   margin: 0;
@@ -100,6 +121,17 @@ body {
   }100% {
     filter: hue-rotate(360deg);
   }
+}
+#completion {
+  background-color: #fff;
+  position: fixed;
+  width: 70%;
+  height: 70vh;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
 }
 #output {
   width: 80%;
