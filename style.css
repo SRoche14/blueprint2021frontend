@@ -1,0 +1,12 @@
+#first {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  font-size: 2em;
+  padding: 1em;
+  font-family: 'Source Sans Pro';
+}
+#first:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
