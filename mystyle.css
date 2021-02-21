@@ -140,3 +140,84 @@ body {
   background-color: #fff;
   color: #000;
 }
+#answerbtn {
+  font-family: 'Source Sans Pro';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  min-height: 6vh;
+  background: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+#answerbtn span {
+  position: absolute;
+  display: block;
+  margin: auto;
+   top: 0; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  background: #0c0c0c;
+  color:rgba(255,255,255,.2);
+  transition: .5s;
+  font-size: 1em;
+  z-index: 1;
+}
+#check {
+  margin-top:1.5em;
+}
+#answerbtn:hover span {
+  color: rgba(255,255,255,1);
+}
+#answerbtn span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255,255,255,.1);
+}
+#answerbtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,#fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  opacity: 0;
+  transition: .5s;
+  animation: changeColor 20s linear infinite;
+}
+#answerbtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,#fb0094, #00f, #0f0, #ff0, #f00, #fb0094, #00f, #0f0, #ff0, #f00);
+  background-size: 400%;
+  opacity: 0;
+  filter: blur(20px);
+  transition: .5s;
+  animation: changeColor 20s linear infinite;
+}
+@keyframes changeColor {
+  0% {
+    background-position: 0 0;
+  } 50% {
+    background-position: 300% 0;
+  } 100% {
+    background-position: 0 0;
+  }
+}
+#answerbtn:hover::before,
+#answerbtn:hover::after {
+  opacity: 1;
+}
