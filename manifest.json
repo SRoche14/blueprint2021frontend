@@ -15,7 +15,8 @@
   "commands": {
     "save" : {
         "suggested_key": {
-             "mac": "Command+Shift+L"
+          "default": "Ctrl+Shift+L",
+          "mac": "Command+Shift+L"
         },
         "description": "Save Function"
     }
