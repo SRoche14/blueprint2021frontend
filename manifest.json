@@ -1,6 +1,7 @@
 {
-  "name": "bear",
+  "name": "Hiqs",
   "version": "1.0",
+  "description": "Highlighted-Instant-Quizes!",
   "manifest_version": 2,
   "content_scripts": [
     {
@@ -9,8 +10,13 @@
     }
   ],
   "browser_action": {
-    "default_title": "Bear",
-    "default_popup": "popup.html"
+    "default_title": "Hiqs",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/favicon1.png",
+      "32": "images/favicon2.png",
+      "128": "images/favicon3.png"
+    }
   },
   "commands": {
     "save" : {
