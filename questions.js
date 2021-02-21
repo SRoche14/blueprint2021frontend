@@ -89,6 +89,7 @@ for (var i = 0; i < questions.length; i++) {
 
     div.classList.add("questionbox");
     div2.classList.add("questionbox");
+      div2.classList.add("questionbox2");
     div.appendChild(div2);
     
 
