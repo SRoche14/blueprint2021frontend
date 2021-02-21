@@ -75,7 +75,7 @@ fetch(url1)
                     }
                     score = document.createElement("H1");
                     var t = correct+wrong;
-                    score.innerHTML = "You got " + correct + "/" + t + "questions correct!";
+                    score.innerHTML = "You got " + correct + "/" + t + " questions correct!";
                 }
             }
             document.body.appendChild(score);
