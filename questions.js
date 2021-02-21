@@ -54,6 +54,8 @@ fetch(url1)
         document.getElementById("answerbtn").addEventListener('click', show);
 
         function show() {
+            var correct = 0;
+            var wrong = 0;
             an = document.getElementsByClassName("Answer");
             for (var i=0; i< an.length; i++){
                 if (an[i].style.display == "block") {
@@ -65,11 +67,18 @@ fetch(url1)
                     an[i].style.visibility = "visible";
                     if (document.getElementsByTagName("textarea")[i].value == answers[i]){
                         document.getElementsByTagName("textarea")[i].style.border = "5px solid green";
+                        correct += 1;
                     } else {
                         document.getElementsByTagName("textarea")[i].style.border = "5px solid red";
+                        wrong += 1;
+                        // a formal regulatory framework
                     }
+                    score = document.createElement("H1");
+                    var t = correct+wrong;
+                    score.innerHTML = "You got " + correct + "/" + t + "questions correct!";
                 }
             }
+            document.body.appendChild(score);
         }
     }
 
