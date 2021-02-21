@@ -12,8 +12,16 @@
     "default_title": "Bear",
     "default_popup": "popup.html"
   },
+  "commands": {
+    "save" : {
+        "suggested_key": {
+             "mac": "Command+Shift+L"
+        },
+        "description": "Save Function"
+    }
+},
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["./background.js"]
   },
-  "permissions": ["tabs", "activeTab"]
+  "permissions": ["tabs", "activeTab", "storage", "<all_urls>"]
 }
