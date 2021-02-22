@@ -234,3 +234,10 @@ body {
 #answerbtn:hover::after {
   opacity: 1;
 }
+.finalScore {
+  color: white;
+  text-align: center;
+  margin:0 auto;
+  width: 30%;
+  padding-bottom: 50px;
+}
