@@ -62,6 +62,7 @@ fetch(url1)
                     an[i].style.display = "none";
                     an[i].style.visibility = "hidden";
                     document.getElementsByTagName("textarea")[i].style.border = "none";
+                    score.innerHTML = "";
                 } else {
                     an[i].style.display = "block";
                     an[i].style.visibility = "visible";
